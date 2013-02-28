@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/esebklf/script'
+let g:netrw_dirhist_2='/home/esebklf/signum_tabeller/toni'
+let g:netrw_dirhist_3='/home/esebklf/.vim'
+let g:netrw_dirhist_4='/home/esebklf/.vim/bundle/vim-powerline-develop'
