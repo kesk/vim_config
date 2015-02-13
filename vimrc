@@ -3,8 +3,9 @@ call pathogen#infect()
 
 """ My settings
 "colorscheme zenburn
-colorscheme xoria256
+"colorscheme xoria256
 "colorscheme wombat256
+colorscheme burnttoast256
 syntax on
 set nocompatible
 set hidden
