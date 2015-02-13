@@ -5,7 +5,9 @@ call pathogen#infect()
 "colorscheme zenburn
 "colorscheme xoria256
 "colorscheme wombat256
-colorscheme burnttoast256
+"colorscheme burnttoast256
+colorscheme gruvbox
+set background=dark
 syntax on
 set nocompatible
 set hidden
@@ -18,6 +20,10 @@ set smartcase
 set hidden
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
+
+" Italics
+set t_ZH=[3m
+set t_ZR=[23m
 
 " Search settings
 set incsearch
