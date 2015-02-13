@@ -43,7 +43,8 @@ set winminheight=0
 au BufNewFile,BufRead *.test set filetype=php
 
 " 80 column vertical line
-highlight ColorColumn ctermbg=235
+"highlight ColorColumn ctermbg=235 guibg=#333333
+set colorcolumn=80
 "let &colorcolumn=join(range(81,999),",")
 
 " Highligt trailing spaces
@@ -58,16 +59,27 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <leader>l :ls<cr>:b<space>
 nnoremap <leader>n :NERDTreeToggle<cr>
+nnoremap <leader>t :TagbarOpenAutoClose<cr>
 nnoremap n nzz
 nnoremap N Nzz
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
+nnoremap <leader>m <C-]>
 
 " Auto insert } after {
 inoremap {      {}<Left>
 inoremap {<CR>  {<CR>}<Esc>O
 inoremap {{     {
 inoremap {}     {}
+
+" Shift+Insert paste
+if has("gui_running")
+    map  <silent>  <S-Insert>  "*p
+    imap <silent>  <S-Insert>  <Esc>"*pa
+endif
+
+" Remove trailing whitespace on save
+autocmd BufWritePre *.rb :%s/\s\+$//e
 
 " 256 Colors!
 "if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
@@ -88,3 +100,7 @@ let g:mark_multiple_trigger = "<C-n>"
 
 """ CTRL-P
 let g:ctrlp_extensions = ['tag']
+
+""" Vdebug
+"let g:vdebug_options = {"port" : 18888, "server": 'eselnts1231'}
+
