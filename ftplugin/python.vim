@@ -1,2 +1,1 @@
-"setlocal foldmethod=indent
-"setlocal foldnestmax=3
+setlocal nofoldenable
