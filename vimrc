@@ -14,6 +14,7 @@ set hidden
 set list
 set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
 
+set noshowmode
 set showcmd
 set ignorecase
 set smartcase
@@ -22,8 +23,8 @@ set hidden
 set backspace=indent,eol,start
 
 " Italics
-set t_ZH=[3m
-set t_ZR=[23m
+"set t_ZH=[3m
+"set t_ZR=[23m
 
 " Search settings
 set incsearch
