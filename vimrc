@@ -22,10 +22,6 @@ set hidden
 " Allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 
-" Italics
-"set t_ZH=[3m
-"set t_ZR=[23m
-
 " Search settings
 set incsearch
 set ignorecase
@@ -109,6 +105,6 @@ let g:mark_multiple_trigger = "<C-n>"
 """ CTRL-P
 let g:ctrlp_extensions = ['tag']
 
-""" Vdebug
-"let g:vdebug_options = {"port" : 18888, "server": 'eselnts1231'}
-
+""" Tmux stuff
+" Prevent vim from erasing background colour
+set t_ut=
