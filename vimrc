@@ -107,4 +107,5 @@ let g:ctrlp_extensions = ['tag']
 
 """ Tmux stuff
 " Prevent vim from erasing background colour
+" http://sunaku.github.io/vim-256color-bce.html
 set t_ut=
