@@ -14,6 +14,7 @@ set hidden
 set list
 set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
 set cursorline
+set shell=bash
 
 set noshowmode
 set showcmd
