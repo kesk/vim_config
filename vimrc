@@ -18,7 +18,6 @@ set shell=bash
 
 set noshowmode
 set showcmd
-set ignorecase
 set smartcase
 set hidden
 " Allow backspacing over everything in insert mode
@@ -110,4 +109,4 @@ let g:ctrlp_extensions = ['tag']
 """ Tmux stuff
 " Prevent vim from erasing background colour
 " http://sunaku.github.io/vim-256color-bce.html
-set t_ut=
+"set t_ut=
