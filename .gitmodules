@@ -52,3 +52,6 @@
 [submodule "bundle/vim-slamhound"]
 	path = bundle/vim-slamhound
 	url = https://github.com/guns/vim-slamhound.git
+[submodule "vim-gitgutter"]
+	path = vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
