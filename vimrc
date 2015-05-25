@@ -15,6 +15,7 @@ set list
 set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
 set cursorline
 set shell=bash
+set diffopt+=vertical
 
 set noshowmode
 set showcmd
@@ -49,7 +50,7 @@ au BufNewFile,BufRead *.test set filetype=php
 
 " 80 column vertical line
 "highlight ColorColumn ctermbg=235 guibg=#333333
-set colorcolumn=80
+set colorcolumn=100
 "let &colorcolumn=join(range(81,999),",")
 
 " Highligt trailing spaces
