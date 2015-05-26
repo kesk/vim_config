@@ -6,7 +6,8 @@ call pathogen#infect()
 "colorscheme xoria256
 "colorscheme wombat256
 "colorscheme burnttoast256
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme solarized
 set background=dark
 syntax on
 set nocompatible
