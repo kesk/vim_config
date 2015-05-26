@@ -67,8 +67,8 @@ nnoremap k gk
 nnoremap <leader>l :ls<cr>:b<space>
 nnoremap <leader>n :NERDTreeToggle<cr>
 nnoremap <leader>t :TagbarOpenAutoClose<cr>
-nnoremap n nzz
-nnoremap N Nzz
+"nnoremap n nzz
+"nnoremap N Nzz
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
 nnoremap <leader>m <C-]>
