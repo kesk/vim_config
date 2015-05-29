@@ -97,11 +97,6 @@ autocmd BufWritePre *.rb :%s/\s\+$//e
 " Autoload closetag
 au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 
-""" Powerline options
-" Always show status line
-set laststatus=2
-let g:Powerline_symbols = 'compatible'
-
 " Mark multiple
 let g:mark_multiple_trigger = "<C-n>"
 
@@ -112,3 +107,7 @@ let g:ctrlp_extensions = ['tag']
 " Prevent vim from erasing background colour
 " http://sunaku.github.io/vim-256color-bce.html
 "set t_ut=
+
+"" Airline
+let g:airline_powerline_fonts = 1
+set laststatus=2
