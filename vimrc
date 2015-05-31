@@ -72,6 +72,8 @@ nnoremap <leader>t :TagbarOpenAutoClose<cr>
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
 nnoremap <leader>m <C-]>
+" Jump to topic
+map <C-l> <C-]>
 
 " Auto insert } after {
 inoremap {      {}<Left>
@@ -102,6 +104,7 @@ let g:mark_multiple_trigger = "<C-n>"
 
 """ CTRL-P
 let g:ctrlp_extensions = ['tag']
+let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
 
 """ Tmux stuff
 " Prevent vim from erasing background colour
