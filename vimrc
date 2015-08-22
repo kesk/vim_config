@@ -6,8 +6,8 @@ call pathogen#infect()
 "colorscheme xoria256
 "colorscheme wombat256
 "colorscheme burnttoast256
-"colorscheme gruvbox
-colorscheme solarized
+colorscheme gruvbox
+"colorscheme solarized
 set background=dark
 syntax on
 set nocompatible
@@ -114,3 +114,23 @@ let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclu
 "" Airline
 let g:airline_powerline_fonts = 1
 set laststatus=2
+let g:airline#extensions#default#section_truncate_width = {'y':110}
+let g:airline_mode_map = {
+  \ '__' : '-',
+  \ 'n'  : 'N',
+  \ 'i'  : 'I',
+  \ 'R'  : 'R',
+  \ 'c'  : 'C',
+  \ 'v'  : 'V',
+  \ 'V'  : "V-L",
+  \ '' : "V-B",
+  \ 's'  : 'S',
+  \ 'S'  : 'S',
+  \ '' : 'S',
+  \ }
+
+"" Syntastic
+let g:syntastic_mode_map = {
+            \ "mode": "active",
+            \ "active_filetypes": [],
+            \ "passive_filetypes": ["html"] }
