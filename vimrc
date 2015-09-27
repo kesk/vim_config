@@ -1,5 +1,37 @@
+""" Vundle
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'gregsexton/MatchTag'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'kien/ctrlp.vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'othree/html5.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'paredit.vim'
+Plugin 'ervandew/supertab'
+Plugin 'scrooloose/syntastic'
+Plugin 'godlygeek/tabular'
+Plugin 'majutsushi/tagbar'
+Plugin 'bling/vim-airline'
+Plugin 'guns/vim-clojure-static'
+Plugin 'kchmck/vim-coffee-script'
+Plugin 'tpope/vim-fireplace'
+Plugin 'nvie/vim-flake8'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-gitgutter'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'technomancy/slamhound'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
+
 " Load Pathogen
-call pathogen#infect()
+"call pathogen#infect()
 
 """ My settings
 "colorscheme zenburn
@@ -10,7 +42,6 @@ colorscheme gruvbox
 "colorscheme solarized
 set background=dark
 syntax on
-set nocompatible
 set hidden
 set list
 set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
@@ -47,7 +78,7 @@ set scrolloff=3
 set winminheight=0
 
 " File types
-au BufNewFile,BufRead *.test set filetype=php
+"au BufNewFile,BufRead *.test set filetype=php
 
 " 80 column vertical line
 "highlight ColorColumn ctermbg=235 guibg=#333333
