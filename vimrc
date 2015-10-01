@@ -27,7 +27,7 @@ Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-gitgutter'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'technomancy/slamhound'
+Plugin 'guns/vim-slamhound'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
