@@ -29,6 +29,7 @@ Plugin 'vim-gitgutter'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'technomancy/slamhound'
 Plugin 'GEverding/vim-hocon'
+Plugin 'altercation/vim-colors-solarized'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -95,19 +96,30 @@ set colorcolumn=100
 set nobackup
 
 " Key mappings
-let mapleader = ","
+nnoremap <space> <nop>
+let mapleader = " "
 nnoremap j gj
 nnoremap k gk
-nnoremap <leader>l :ls<cr>:b<space>
-nnoremap <leader>n :NERDTreeToggle<cr>
-nnoremap <leader>t :TagbarOpenAutoClose<cr>
+nnoremap <Leader>l :ls<cr>:b<space>
+nnoremap <Leader>n :NERDTreeToggle<cr>
+nnoremap <Leader>t :TagbarOpenAutoClose<cr>
 "nnoremap n nzz
 "nnoremap N Nzz
 noremap <F12> <Esc>:syntax sync fromstart<CR>
 inoremap <F12> <C-o>:syntax sync fromstart<CR>
-nnoremap <leader>m <C-]>
+nnoremap <Leader>m <C-]>
 " Jump to topic
 map <C-l> <C-]>
+nnoremap <Leader>o :CtrlP<CR>
+nnoremap <Leader>w :w<CR>
+
+" Copy paste to system clipboard
+vmap <Leader>y "+y
+vmap <Leader>d "+d
+nmap <Leader>p "+p
+nmap <Leader>P "+P
+vmap <Leader>p "+p
+vmap <Leader>P "+P
 
 " Auto insert } after {
 inoremap {      {}<Left>
@@ -168,3 +180,6 @@ let g:syntastic_mode_map = {
             \ "mode": "active",
             \ "active_filetypes": [],
             \ "passive_filetypes": ["html"] }
+
+" Man pages inside vim
+runtime! ftplugin/man.vim
