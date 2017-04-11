@@ -19,13 +19,14 @@ Plugin 'ervandew/supertab'
 Plugin 'scrooloose/syntastic'
 Plugin 'godlygeek/tabular'
 Plugin 'majutsushi/tagbar'
-Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'guns/vim-clojure-static'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'tpope/vim-fireplace'
 Plugin 'nvie/vim-flake8'
 Plugin 'tpope/vim-fugitive'
-Plugin 'vim-gitgutter'
+Plugin 'airblade/vim-gitgutter'
 Plugin 'derekwyatt/vim-scala'
 Plugin 'technomancy/slamhound'
 Plugin 'GEverding/vim-hocon'
@@ -42,13 +43,13 @@ filetype plugin indent on    " required
 "colorscheme xoria256
 "colorscheme wombat256
 "colorscheme burnttoast256
-colorscheme gruvbox
-"colorscheme solarized
+"colorscheme gruvbox
+colorscheme solarized
 set background=dark
 syntax on
 set hidden
 set list
-set listchars=trail:·,precedes:«,extends:»,tab:▸\ 
+set listchars=trail:·,precedes:«,extends:»,tab:▸\
 set cursorline
 set shell=bash
 set diffopt+=vertical
@@ -77,7 +78,7 @@ set preserveindent
 filetype plugin indent on
 
 set linebreak
-set showbreak=+++\ 
+set showbreak=+++\
 set scrolloff=3
 set winminheight=0
 
@@ -96,8 +97,7 @@ set colorcolumn=100
 set nobackup
 
 " Key mappings
-nnoremap <space> <nop>
-let mapleader = " "
+let mapleader = ","
 nnoremap j gj
 nnoremap k gk
 nnoremap <Leader>l :ls<cr>:b<space>
@@ -134,7 +134,7 @@ if has("gui_running")
 endif
 
 " Remove trailing whitespace on save
-autocmd BufWritePre *.rb :%s/\s\+$//e
+autocmd BufWritePre * :%s/\s\+$//e
 
 " 256 Colors!
 "if $TERM == "xterm-256color" || $TERM == "screen-256color" || $COLORTERM == "gnome-terminal"
