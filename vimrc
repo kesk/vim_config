@@ -1,42 +1,35 @@
-""" Vundle
 set nocompatible              " be iMproved, required
-filetype off                  " required
+call plug#begin('~/.vim/plugged')
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'gregsexton/MatchTag'
+Plug 'tmhedberg/SimpylFold'
+Plug 'kien/ctrlp.vim'
+Plug 'morhetz/gruvbox'
+Plug 'othree/html5.vim'
+Plug 'scrooloose/nerdtree'
+Plug 'vim-scripts/paredit.vim'
+Plug 'ervandew/supertab'
+Plug 'scrooloose/syntastic'
+Plug 'godlygeek/tabular'
+Plug 'majutsushi/tagbar'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'guns/vim-clojure-static'
+Plug 'kchmck/vim-coffee-script'
+Plug 'tpope/vim-fireplace'
+Plug 'nvie/vim-flake8'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'derekwyatt/vim-scala'
+Plug 'technomancy/slamhound'
+Plug 'GEverding/vim-hocon'
+Plug 'altercation/vim-colors-solarized'
+Plug 'exu/pgsql.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
-Plugin 'VundleVim/Vundle.vim'
-
-Plugin 'gregsexton/MatchTag'
-Plugin 'tmhedberg/SimpylFold'
-Plugin 'kien/ctrlp.vim'
-Plugin 'morhetz/gruvbox'
-Plugin 'othree/html5.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'paredit.vim'
-Plugin 'ervandew/supertab'
-Plugin 'scrooloose/syntastic'
-Plugin 'godlygeek/tabular'
-Plugin 'majutsushi/tagbar'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'guns/vim-clojure-static'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'tpope/vim-fireplace'
-Plugin 'nvie/vim-flake8'
-Plugin 'tpope/vim-fugitive'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'derekwyatt/vim-scala'
-Plugin 'technomancy/slamhound'
-Plugin 'GEverding/vim-hocon'
-Plugin 'altercation/vim-colors-solarized'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
-
-" Load Pathogen
-"call pathogen#infect()
+call plug#end()
 
 """ My settings
 "colorscheme zenburn
