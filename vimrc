@@ -3,7 +3,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'gregsexton/MatchTag'
 Plug 'tmhedberg/SimpylFold'
-Plug 'kien/ctrlp.vim'
+"Plug 'kien/ctrlp.vim'
 Plug 'morhetz/gruvbox'
 Plug 'othree/html5.vim'
 Plug 'scrooloose/nerdtree'
@@ -26,7 +26,7 @@ Plug 'GEverding/vim-hocon'
 Plug 'altercation/vim-colors-solarized'
 Plug 'exu/pgsql.vim'
 Plug 'leafgarland/typescript-vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': '~/.fzf' }
 Plug 'junegunn/fzf.vim'
 
 call plug#end()
@@ -38,7 +38,7 @@ call plug#end()
 "colorscheme burnttoast256
 "colorscheme gruvbox
 colorscheme solarized
-set background=dark
+set background=light
 syntax on
 set hidden
 set list
@@ -93,9 +93,9 @@ set nobackup
 let mapleader = ","
 nnoremap j gj
 nnoremap k gk
-nnoremap <Leader>l :ls<cr>:b<space>
-nnoremap <Leader>n :NERDTreeToggle<cr>
-nnoremap <Leader>t :TagbarOpenAutoClose<cr>
+nnoremap <Leader>l :Buffers<CR>
+nnoremap <Leader>n :NERDTreeToggle<CR>
+nnoremap <Leader>t :TagbarOpenAutoClose<CR>
 "nnoremap n nzz
 "nnoremap N Nzz
 noremap <F12> <Esc>:syntax sync fromstart<CR>
@@ -105,6 +105,10 @@ nnoremap <Leader>m <C-]>
 map <C-l> <C-]>
 nnoremap <Leader>o :CtrlP<CR>
 nnoremap <Leader>w :w<CR>
+" Search files
+nnoremap <C-p> :GFiles<CR>
+nnoremap <Leader>f :Files<CR>
+nnoremap <Leader>g :GFiles<CR>
 
 " Copy paste to system clipboard
 vmap <Leader>y "+y
@@ -141,10 +145,6 @@ au Filetype html,xml,xsl source ~/.vim/scripts/closetag.vim
 " Mark multiple
 let g:mark_multiple_trigger = "<C-n>"
 
-""" CTRL-P
-let g:ctrlp_extensions = ['tag']
-let g:ctrlp_user_command = ['.git/', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-
 """ Tmux stuff
 " Prevent vim from erasing background colour
 " http://sunaku.github.io/vim-256color-bce.html
@@ -176,3 +176,6 @@ let g:syntastic_mode_map = {
 
 " Man pages inside vim
 runtime! ftplugin/man.vim
+
+" Default to postgres sql dialect
+let g:sql_type_default = 'pgsql'
